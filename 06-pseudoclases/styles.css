@@ -1,0 +1,79 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+
+/** PSEUDOCLASSES */
+
+
+/* :first-child --> SELECTS THE FIRST ELEMENT OF A GROUP */
+
+ul li:first-child {
+    color: purple;
+}
+
+
+/* :nth-child(n) --> SETS CSS PROPERTIES TO THE n ELEMENT  */
+
+ul li:nth-child(2) {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+/* :last-child --> SELECT THE LAST ELEMENT OF A GROUP */
+
+ul li:last-child {
+    color: gray;
+    font-weight: bold;
+}
+
+#mi-enlace {
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+
+/* :link --> SETS PROPERTIES FOR A LINK THAT HAS NOT BEEN VISITED BEFORE */
+
+#mi-enlace:link {
+    color: red;
+}
+
+.links:link {
+    color: purple
+}
+
+
+/* :visited -->  SETS PROPERTIES FOR A LINK THAT HAS NOT BEEN VISITED BEFORE */
+
+#mi-enlace:visited {
+    color: orangered;
+}
+
+#mi-enlace:hover {
+    color: blue
+}
+
+
+/* :active --> SETS PROPERTIES WHILE THE USER HAS CLICKED THE ELEMENT */
+
+#mi-enlace:active {
+    color: green
+}
+
+input[type='text'] {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* :focus --> SETS PROPERTIES WHEN THE ELEMENT IS SELECTED BY THE KEYBOARD */
+
+input[type='text']:focus {
+    border: 4px dashed red;
+}
