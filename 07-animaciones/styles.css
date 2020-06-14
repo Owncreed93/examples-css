@@ -1,0 +1,58 @@
+#boton {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 5px solid green;
+    transition: border 1.5s, background 3s, border-radius 1s;
+}
+
+#boton:hover {
+    border-radius: 15px;
+    background: orangered;
+    border: 5px solid red;
+}
+
+#caja {
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    /* CALL THE KEYFRAME */
+    animation-name: desplazamiento;
+    /* DURATION  */
+    animation-duration: 10s;
+    /* IS IT GOING TO REPEAT? */
+    animation-iteration-count: infinite;
+    /* HOW YOU DEISTRIBUTE TIME IN THE ANIMATION */
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamiento {
+    0% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        margin-left: 0px;
+        transform: rotate(0deg);
+        border-radius: 0%;
+    }
+}
