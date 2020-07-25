@@ -35,11 +35,12 @@ body {
 }
 
 .wrap {
-    width: 1200px;
+    width: 1250px;
     margin: 0 auto;
 }
 
-.gear {
+.gear,
+.icon {
     font-family: "WebSymbolsRegular";
 }
 
@@ -114,7 +115,7 @@ body {
 /* BANNER */
 
 #banner {
-    width: 95.6%;
+    width: 95.5%;
     height: 100px;
     border: 10px solid #ffffff;
     box-shadow: 0 0 2px grey;
@@ -133,4 +134,116 @@ body {
     letter-spacing: 2px;
     text-shadow: 2px 2px 1px #000000;
     margin: 27px auto;
+}
+
+
+/* CARDS */
+
+.card {
+    float: left;
+    width: 200px;
+    height: 305px;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 2px #dddddd;
+    overflow: hidden;
+    margin: 40px 25px 25px 25px;
+    cursor: pointer;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card .icon {
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: 'TrebuchetMS';
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c;
+}
+
+.card .description {
+    text-align: justify;
+    color: #0370b9;
+    font-family: 'TrebuchetMS';
+    font-size: 15px;
+}
+
+
+/* SIDE BAR */
+
+#lateral {
+    width: 300px;
+    min-height: 1200px;
+    font-family: 'TrebuchetMS';
+    float: right;
+    margin: 20px;
+}
+
+aside h3 {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background-image: url('../img/pxgray.png');
+    box-shadow: 0 1px 0 #393d3f, 1px 2px 0 #393d3f, 3px 4px 0 #393d3f;
+    font-size: 30px;
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#lateral h3:first-child {
+    margin-top: 0;
+}
+
+#search {
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 4px #cccccc inset;
+}
+
+#lateral input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #cccccc;
+    transition: all 300ms;
+}
+
+#lateral input[type='text']:focus {
+    color: #555555;
+}
+
+#lateral input[type='submit'],
+#lateral input[type='submit'] {
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #cccccc;
+    color: #555555;
+    padding-left: 6px;
 }
