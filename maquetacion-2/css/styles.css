@@ -247,3 +247,78 @@ aside h3 {
     color: #555555;
     padding-left: 6px;
 }
+
+.aside-box {
+    width: 85%;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background: #ffffff;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), 0 1px #ffffff inset, 0 -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 85%;
+    height: 30px;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 1px #cccccc inset;
+    border-radius: 5px;
+    padding-left: 30px;
+    color: gray;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    color: #555555;
+    box-shadow: 1px 1px 1px #cccccc inset;
+}
+
+#login #user,
+#login #password {
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 30px;
+}
+
+#login #password {
+    margin-left: 18px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#login input[type='submit'],
+#login input[type='button'],
+#login input[type='reset'],
+#login button {
+    /* display: block; */
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 17px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    border: 1px solid #156785;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "TrebuchetMS";
+    font-weight: lighter;
+    transition: all 300ms;
+}
+
+#login input[type='submit']:hover,
+#login input[type='button']:hover,
+#login input[type='reset']:hover,
+#login button:hover {
+    box-shadow: 0 0 3px gray;
+}
