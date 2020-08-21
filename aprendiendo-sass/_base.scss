@@ -1,0 +1,50 @@
+// VARIABLES
+$fuente-tipica: sans-serif,
+Helvetica,
+Arial;
+$color-fondo: #cccccc;
+$color-letra: rgba(231, 29, 29, 0.726);
+body {
+    background-color: $color-fondo;
+}
+
+h1 {
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+
+.caja {
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    h1 {
+        color: blue;
+    }
+    p {
+        color: green;
+    }
+    .info {
+        font-size: 10px;
+        .author {
+            font-size: 15px;
+        }
+    }
+}
+
+// MIXINS / FUNCTIONS
+@mixin crearBordes($color, $size, $shadow) {
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0 0 $size black;
+}
+
+.caja {
+    @include crearBordes(red, 10px, black);
+}
+
+.listado {
+    @include crearBordes(green, 5px, yellow);
+}
