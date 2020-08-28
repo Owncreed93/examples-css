@@ -1,0 +1,24 @@
+body {
+  background-color: #3232d1;
+}
+h1 {
+  font-family: Arial;
+}
+.informacion ul a {
+  color: white;
+  font-size: 18px;
+}
+.informacion {
+  box-shadow: 0 0 20px black;
+  text-shadow: 0 0 20px black;
+}
+h1 {
+  font-size: 37px;
+}
+h1 {
+  color: green;
+}
+.informacion {
+  height: 900px;
+  height: 180px;
+}
