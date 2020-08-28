@@ -1,0 +1,63 @@
+// VARIABLES
+
+@bgcolor: rgb(50, 50, 209);
+@fuente: Arial;
+@b: body;
+
+@{b} {
+    background-color: @bgcolor;
+}
+
+h1 {
+    font-family: @fuente;
+}
+
+// EMBEDDED CODE
+.informacion {
+    ul {
+        a{
+            color: white;
+            font-size: 18px;
+        }
+    }
+}
+
+// MIXINS
+.sombras(@size){
+    box-shadow: 0 0 @size black;
+    text-shadow: 0 0 @size black;
+}
+
+.informacion {
+    .sombras(20px);
+}
+
+
+// OPERATORS
+
+h1 {
+    font-size: 30px + 7;
+}
+
+// MIXINS CONDICIONALES
+
+.textoNegro(@value) when (@value = negro) { 
+    color: red;
+}
+
+h1 {
+    color: green;
+    .textoNegro(blanco)
+}
+
+// BUCLES
+.loop(@cont) when (@cont > 0) {
+    .loop( ( @cont - 10 ) );
+
+    height: ( (900px / @cont) );
+}
+
+.informacion{
+    height: 900px;
+    .loop(5);
+}
