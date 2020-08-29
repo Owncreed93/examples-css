@@ -1,19 +1,29 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    --rojo: #f44336;
 }
 
 #layout {
     /** ACTIVATES FLEXBOX */
     display: flex;
     /* flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap; 
+    */
     flex-flow: row wrap;
-    /** */
+    /* justify-content: space-between; */
+    /***/
+    height: 700px;
+    align-items: flex-start;
     border: 3px solid black;
     padding: 5px
 }
 
 .caja {
+    /* flex-grox --> increase and distributes the size of the elements */
+    flex-grow: 1;
+    /* flex-basis --> sets the minimal size of an element */
+    /* flex-basis: 25%; */
+    /* flex-basis: calc( (100% / 3) - 80px); */
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -25,17 +35,28 @@ body {
 }
 
 .red {
-    background-color: #f44336;
+    /* order: 4; */
+    align-self: flex-start;
+    background-color: var(--rojo);
 }
 
 .green {
+    /* order: 2; */
+    margin-top: 10%;
     background-color: #009688;
 }
 
 .blue {
+    /* order: 1; */
+    /* flex-shrink --> REDUCES THE SIZE OF AN ELEMENT RESPECT OTHERS
+    flex-shrink: 9; */
+    align-self: center;
     background-color: #2196F3;
 }
 
 .orange {
+    /* order: 3; */
+    /* flex-basis: 100%; */
+    align-self: flex-end;
     background-color: #FF9800;
 }
