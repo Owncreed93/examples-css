@@ -18,5 +18,15 @@ footer {
 }
 
 .lateral {
-    height: 50%;
+    height: 550px;
+}
+
+.lateral>div {
+    height: calc( 250px / 3);
+}
+
+@media ( max-width: 768px) {
+    #menu {
+        height: auto;
+    }
 }
